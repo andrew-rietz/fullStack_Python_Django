@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Basics</title>
+  </head>
+  <body>
+    <!--
+      Forms revolve around the <input> tag
+      Allow for user inputs within the browser
+      A key component of Django later on
+    -->
+    <!--
+      For more detail on the types of forms available:
+      https://www.w3schools.com/html/html_form_input_types.asp
+    -->
+    <h1>Forms Basics</h1>
+
+    <!-- By default, forms have three option attributes:
+          - class:  
+          - action:
+          - method:
+          We're going to gloss over for now, but will be used later on
+    -->
+    <form>
+      <h2>Log In</h2>
+      <h3>Please input your Email and Password</h3>
+
+      <!--
+        To take in user input, you need to create an <input> tag
+        By default, this tag has two attributes:
+        - type:   The type of input we're asking for
+        - name:   Name is what you want to call the input so it can be referenced later
+        - value:  Default value in case user doesn't enter anything
+      -->
+      <input type="email" name="userEmail" value="Email">
+      <input type="password" name="userPassword" value="">
+      <!--
+        In order to allow the user to submit the input, you need to create
+        a "submit" input
+      -->
+      <input type="submit" name="" value="Click here to submit">
+
+    </form>
+
+    <br>
+    <br>
+
+    <form>
+      <h2>Pick a color</h2>
+      <h3>Click on button below</h3>
+
+      <input type="color" name="" value="">
+    </form>
+
+    <br>
+    <br>
+
+    <form>
+      <h2>Enter some text</h2>
+      <input type="text" name="" value="Text goes here">
+    </form>
+
+  </body>
+</html>

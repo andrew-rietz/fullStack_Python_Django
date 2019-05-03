@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables Basics</title>
+  </head>
+  <body>
+    <!--
+      HTML tables have the general structure:
+      <table>  Indicates that there is going to be a table
+        <thead>  This is the header row
+          <th> These are the cells in the header row
+        <tr> These are the table rows (non-header)
+          <td> These are the cells within each row
+    -->
+    <!-- You can add a border using an optional 'border' tag -->
+    <table border="1">
+      <!--
+        If you were to remove the thead section, you'd still get a table
+        Items in the th tag are bolded
+        The TH section helps the reader by defining the different columns
+      -->
+      <thead>
+        <th>Number</th>
+        <th>Color</th>
+        <th>Country</th>
+      </thead>
+      <tr>
+        <td>250</td>
+        <td>Red</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>100</td>
+        <td>Blue</td>
+        <td>France</td>
+      </tr>
+    </table>
+
+  </body>
+</html>

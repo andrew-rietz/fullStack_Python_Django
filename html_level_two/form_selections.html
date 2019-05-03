@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Selections</title>
+  </head>
+  <body>
+    <!--
+      Will expolore a variety of inputs methods for forms:
+      radio button
+      drop down menus
+      text area inputs
+    -->
+
+    <h1>Hotel Feedback Form</h1>
+
+    <!--
+      To link together radio buttons, they need to use the same name
+      In the example below, the buttons share the name "loc"
+    -->
+    <form method="get">
+      <h3>Are you from inside the US or outside the US?</h3>
+
+      <label for="inUS">Inside: </label>
+      <input id ="inUS" type="radio" name="loc" value="Inside">
+      <label for="outUS">Outside: </label>
+      <input id ="outUS" type="radio" name="loc" value="Outside">
+
+      <!--
+        You can create a dropdown menu using the <select> tag
+      -->
+      <h3>How was your service?</h3>
+      <select name="stars">
+        <option value="Great">3</option>
+        <option value="Okay">2</option>
+        <option value="Bad">1</option>
+      </select>
+
+      <!--
+        You can create a large text field using the
+        <textarea> tag
+      -->
+      <h3>Any other feedback?</h3>
+      <textarea name="userFeedback" rows="8" cols="80"></textarea>
+
+      <input type="submit" name="" value="SUBMIT">
+    </form>
+
+  </body>
+</html>

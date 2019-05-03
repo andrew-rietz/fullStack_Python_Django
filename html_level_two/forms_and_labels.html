@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms and Labels</title>
+  </head>
+  <body>
+
+    <!--
+      The use of the label tag will allow you to add labels in front
+      of an input in your HTML form
+
+      We'll also explore how to activate actions upon clicking submit
+    -->
+    <form>
+
+      <p>Enter Email:</p>
+      <input type="email" name="userEmail" value="">
+      <input type="submit" name="" value="Submit">
+      <!--
+        When you click the submit button, the page itself looks the same
+        But, if you look at the URL, you'll see that it's changed
+
+        The url has expanded to include the name of your input
+        and the information entered by the user
+      -->
+    </form>
+
+
+    <!--
+      In the example below, we'll add in an 'Action' tag to the form
+      We'll also add a "get" method
+    -->
+    <form action="https://www.facebook.com" method="get">
+
+      <p>Enter text and take me to FB:</p>
+      <input type="text" name="userInput" value="">
+      <input type="submit" name="" value="Submit">
+      <!-- Submitting the form above will take the user to the following url:
+          "https://www.facebook.com/?userInput=asdfasdfasdf"
+          Assuming the user entered "asdfasdfasdf"
+      -->
+
+    </form>
+
+    <form>
+      <!-- You can add labels to a form using the <label> tag -->
+      <!-- Note that this is the wrong way to do things, because you're labeling
+        each form individually
+
+        The example below does not conform to DRY principles
+        "Don't repeat yourself"
+      -->
+      <label>
+        <p>Enter some text</p>
+        <input type="text" name="" value="block one">
+      </label>
+      <label>
+        <p>Enter some text</p>
+        <input type="text" name="" value="block two">
+      </label>
+    </form>
+
+    <br>
+    <br>
+    
+    <!-- A better way to do things is shown below using the "for" parameter -->
+    <form>
+
+      <label for="userInput">Enter Input:</label>
+      <!--
+        Note that we've added an id parameter to the input tag below
+        The id tag is a way to uniquely identify tags within the html page
+      -->
+      <input id="userInput" type="text" name="" value="Hello!">
+
+    </form>
+
+    <!--
+      The last things to know here:
+      Inputs have two other commonly used Attributes:
+
+      - placeholder:    Puts placeholder text in the input field
+      - required:       When the user clicks submit, this field must be completed
+    -->
+    <br>
+    <br>
+
+    <form>
+
+      <input type="username" name="" placeholder="Enter name" required>
+      <input type="password" name="" placeholder="Enter password" required>
+      <input type="submit" name="" value="Sign up!">
+
+    </form>
+
+  </body>
+</html>
