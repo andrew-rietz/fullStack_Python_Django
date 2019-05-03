@@ -1,5 +1,5 @@
 Good resources:
 
-
+** This will probably be the more useful reference
 developer.mozilla.org  (HTML element reference)
 w3schools.com
