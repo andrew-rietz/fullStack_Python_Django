@@ -1,0 +1,27 @@
+/*
+
+In general, the more specific the reference,
+the higher the priority.
+
+
+In order of highest priority to lowest:
+Unique ids
+classes
+vanilla tags
+
+
+Check out design shack website for more detail / info
+
+*/
+
+li{
+  color:red;
+}
+
+.topitems{
+  color: blue;
+}
+
+#two{
+  border: 3px solid black;
+}

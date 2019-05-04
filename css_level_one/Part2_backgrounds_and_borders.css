@@ -1,0 +1,49 @@
+/*
+selected tag{
+  property:value;
+}
+*/
+
+/*
+Backgrounds:
+
+You can specify backgrounds for your webpage
+Typically, background are simply entered as colors,
+but you can specify an image for a background as well.
+
+*/
+
+
+/*
+Borders:
+
+Borders require three styles:
+- border width    You can specify the width in pixels "px"
+- border style    Atom will offer options for style (dotted, dashed, etc.)
+- border color    Same approach as general colors
+
+*/
+
+body{
+  /*
+  background-color: gray;
+  */
+  background: url(https://www.futurity.org/wp/wp-content/uploads/2015/11/alaska_mountains_1170-480x400.jpg);
+  background-repeat: no-repeat;
+}
+
+div{
+  background-color: blue;
+  border-color: orange;
+  border-width: 5px;
+  border-style: dotted;
+}
+
+p{
+  color:yellow;
+}
+
+span{
+  background: red;
+  color: black;
+}

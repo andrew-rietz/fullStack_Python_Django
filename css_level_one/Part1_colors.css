@@ -1,0 +1,37 @@
+/* comments are delineated with slashes and asterisks */
+
+/* The general form of CSS is:
+
+selected html tag{
+  property: value;
+} */
+
+/*
+Other methods for changing color:
+- color keyword:  many common colors are available by name (i.e,. 'red', 'blue')
+- rgb code:       You can also pass in an RGB code
+- hex code:       You can also pass in a hex code
+- rgba code:      Similar to rbg, but with an additional attribute (alpha)
+                  alpha is the transparency (1 = 100% opaque, 0 = 0% opaque)
+
+Some good color pickers are available online. Google "color picker"
+
+Hex codes are probably the most common method of defining colors
+*/
+
+
+h1{
+  color: red;
+}
+
+li{
+  color: rgb(255,97,0);
+}
+
+p{
+  color: #0895a8;
+}
+
+h4{
+  color: rgba(255, 97, 0, 0)
+}

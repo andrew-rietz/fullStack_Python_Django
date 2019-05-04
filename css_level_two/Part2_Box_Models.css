@@ -1,0 +1,53 @@
+/*
+
+Each element within an HTML page is defined using the box model
+The model is essentially a set of nested boxes, and the
+developer is able to specify the attributes of each level:
+
+
+----------------------------------------------------
+|                      Margin                      |
+|   --------------------------------------------   |
+|   |                  Border                  |   |
+|   |   -----------------------------------    |   |
+|   |   |              Padding            |    |   |
+|   |   |   ---------------------------   |    |   |
+|   |   |   |          Content        |   |    |   |
+|   |   |   |                         |   |    |   |
+|   |   |   |                         |   |    |   |
+|   |   |   ---------------------------   |    |   |
+|   |   |                                 |    |   |
+|   |   -----------------------------------    |   |
+|   |                                          |   |
+|   --------------------------------------------   |
+----------------------------------------------------
+
+Content is the actual information displayed via html
+Padding is the space between the content and the border
+Border is the defined border type (size, style, color)
+Margin is the space between the border and other elements
+
+
+By default, elements span the entire page width
+You can change element width using the 'width' attribute
+
+
+
+*/
+
+
+#top{
+  border: 4px solid blue;
+  width: 25%;
+  text-align: center;
+  /* top right bottom left */
+  margin: auto;
+}
+
+#bottom{
+  border: 4px solid red;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+}

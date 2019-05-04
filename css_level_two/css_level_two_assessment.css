@@ -1,0 +1,53 @@
+/*
+Create a web page that showcases a 5-color paletter
+in tabular format.
+
+The web page should also use an online font.
+
+
+Color palette can come from: coolors.co
+Font can come from:  fonts.google.com
+*/
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px auto 20px auto;
+  text-align: center;
+}
+
+table{
+  font-family: 'Montserrat', sans-serif;
+  border: 0px solid white;
+  size: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+th{
+  width: 120px;
+}
+
+td{
+  height: 240px;
+  border: 4px solid white;
+}
+
+#colOne{
+  background-color: #ED6A5A;
+}
+
+#colTwo{
+  background-color: #F4F1BB;
+}
+
+#colThree{
+  background-color: #9BC1BC;
+}
+
+#colFour{
+  background-color: #5CA4A9;
+}
+
+#colFive{
+  background-color: #E6EBE0;
+}

@@ -1,0 +1,79 @@
+/*
+
+Not all fonts are available on all operating systems
+Arial is a pretty universal font
+Helvetica is primarily an OS X font
+
+Fonts on Windows:
+https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows
+Fonts on Macs:
+https://en.wikipedia.org/wiki/List_of_typefaces_included_with_macOSfon
+General Font Information:
+http://www.cssfontstack.com/
+
+-----------------------------------------------------------
+
+Font Size
+
+Font sizes can be defined a couple ways:
+
+- Using a pixel value (not common)
+- Using an 'em' value (more common)
+
+Usually what you'll do is select a font size for the body element
+From then on, you'll use "em" to specify how large the font should
+be relative to the font size of the body tag
+
+-----------------------------------------------------------
+
+Font Style
+
+Styles such as italics, etc. can be applied using the font-style tag
+
+-----------------------------------------------------------
+
+Font Weight can be specified with the font-weight tag
+
+-----------------------------------------------------------
+
+Text Alignment
+
+Text can be aligned using the text-align command
+Common alignments (left, right, center) are available as keywords
+
+-----------------------------------------------------------
+
+You can also download your own set of fonts:
+
+Several types of fonts are available from google
+fonts.google.com
+http://fontlibrary.org
+
+
+To embed a font within a webpage, follow the instructions from the
+fonts.google.com site
+
+The site also gives information on how to source the font family in CSS
+Note: We've embedded the "Barrio" font on the html page accompanying this
+CSS sheet.
+
+*/
+
+h1{
+  font-family: "Arial";
+}
+
+p{
+  font-family: monospace;
+  font-style: italic;
+  font-weight: bold;
+}
+
+body{
+  font-size: 20px;
+}
+
+#two{
+  font-size: 2.0em;
+  font-family: Barrio, cursive;
+}

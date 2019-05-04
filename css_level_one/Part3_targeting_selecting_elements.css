@@ -1,0 +1,82 @@
+/*
+Targeting and selecting elements
+
+Within an HTML document, you can add identifiers to your tags, to
+make them easier to select and style.
+
+Common identifiers:
+
+- class
+- id
+
+*/
+
+div{
+  color: red;
+}
+
+/*
+You can refer to specific classes within the HTML document using classes
+Classes are ways for you to add different formatting to the same type
+of tags within an HTML page.
+
+For instance, your page will likely have multiple div tags.
+If you add a class name to some of your div tags, you can then
+refer to the specific classes by name.
+
+When referencing a class, the name is preceded by a period "."
+
+When refercing an id, the id is preceded by a hash symbol "#"
+
+To select all elements on the page, use an asterisk
+Asterisks are not commonly used and don't override all styles
+*/
+
+.firstDiv{
+  color: blue;
+}
+
+.secondDiv{
+  color: red;
+}
+
+#singledout{
+  color:green;
+  text-decoration: line-through;
+}
+
+
+/*
+Selecting adjacent siblings
+Adjacent siblings are tags that are next to one another.
+You select adjacent siblings using the "+" symbol.
+*/
+h3 + ul{
+  /*
+  Note you can specify all the inputs for a border in one line:
+  */
+  border: 4px dotted purple;
+}
+
+
+/*
+Descendants
+Descendants refer to nested tags. For instance, for anchor tags inside a list:
+Descendants are indicated by a space between tag names
+*/
+li a{
+  color: red;
+}
+
+/*
+You can also grab items based on their attributes
+For instance, in the example below, we're grabbing any tags that are:
+  Anchor tags, nested within a list, that have a href attribute of
+  "www.npr.org"
+
+The attribute is included in brackets "[]"
+*/
+li a[href:"www.npr.org"]{
+  color: blue;
+  border: 5px solid orange;
+}
