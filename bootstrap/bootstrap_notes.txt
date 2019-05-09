@@ -1,0 +1,37 @@
+Bootstrap is a very common framework for front-end development
+
+Frameworks:
+- Inversion of control. The framework defines rules for you to follow
+- Default behavior
+- Extensibility
+- Non-modifiable framework code
+
+
+A large part of bootstrap is knowing how to reference the
+documentation for your own use cases
+
+
+New items introduced in Bootstrap v4:
+
+- Panels are replaced by cards
+- Larger default font sizes
+- New grid tier (XL)
+- Use of flexbox
+- Moved from Less to Sass (CSS frameworks)
+
+
+The most important thing is to get the ability to reference and work
+with the bootstrap documentation.
+
+
+There are two ways to use bootstrap:
+[1] Download the framework
+[2] Use the CDN (Content Delivery Network)
+
+We're going to use the CDN for this course.
+
+------------------------------------------------
+
+Button, Container, and Jumbotron Classes
+
+------------------------------------------------

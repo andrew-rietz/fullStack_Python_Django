@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Pt 1</title>
+    <!--
+      We're going to use Boostraps CSS stylesheet.
+      https://getbootstrap.com/docs/4.3/getting-started/introduction/
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!--
+      Containers wrap their contents in containers, adding some
+      padding to the elements.
+
+      Containers try to center your content on the page.
+    -->
+    <div class="container">
+      <h1>Hello world!</h1>
+
+      <!--
+        Buttons
+
+        https://getbootstrap.com/docs/4.3/components/buttons/
+
+        You can create buttons using the <button> tag
+        Buttons aren't especially useful without javascript, but
+        we're covering them now to talk about their style in bootstrap
+
+        That said, you can use anchor tags (<a>) with buttons to
+        navigate to other pages.
+
+        Reference the bootstrap docs to see how to style buttons
+        Typically, you'll need to modify the "type" or "class" attributes
+      -->
+      <button class="btn btn-success" type="button" name="button">Click me!</button>
+      <!--
+        You can also chain classes together to apply multiple attributes
+      -->
+      <p></p>
+      <button class="btn btn-success btn-lg" type="button" name="button">Enabled</button>
+      <button class="btn btn-success btn-lg" disabled="disabled" type="button" name="button">Disabled</button>
+
+      <!--
+        Jumbotron
+
+        https://getbootstrap.com/docs/4.3/components/jumbotron/
+        
+        Jumbotrons are like landing pages / banners / callouts
+      -->
+      <p></p>
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+
+    </div>
+
+  </body>
+</html>
