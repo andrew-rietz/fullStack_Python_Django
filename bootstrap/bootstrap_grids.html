@@ -8,6 +8,9 @@
 
     <!--
       We're going to write some CSS directly in the html page
+
+      We define a "boxy" class so that we can visualize how the
+      various grid options impact how information is displayed
     -->
     <style>
       .boxy{
@@ -19,6 +22,10 @@
   <body>
 
     <!--
+
+      More detail is available on the Bootstrap Layout page:
+
+      https://getbootstrap.com/docs/4.3/layout/overview/
 
       The grip system is one of the most fundamental features of
       bootstrap
@@ -42,6 +49,19 @@
       screen width should take up 6 columns.
 
       There are five responsive "breakpoints" you can use: xs,sm,md,lg,xl
+      You can specify the number of columns an element takes up based on the screen size:
+
+      <div class="row">
+        <div class="col-lg-4 boxy" >A Col-Large</div>
+      </div>
+
+      You can also chain screen size information to specify the display on
+      different size screens:
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 boxy" >A Col-Large</div>
+      </div>
+
       Unless specified, elements inside a row take up equal width
     -->
 
@@ -162,6 +182,10 @@
     <hr>
 
       <!-- Nested Rows allow you to further divide the grid beyond 12 units -->
+      <!--
+        In the example below, for instance, the second column is actually split
+        again into two equally sized columns.
+      -->
 
       <!-- Example 6 -->
       <div class="container">
